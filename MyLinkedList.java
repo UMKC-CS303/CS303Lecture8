@@ -77,6 +77,7 @@ public class MyLinkedList<E> implements MyList<E> {
   }
 
   @Override 
+  //TASK 1: COMPLETE THE ADD METHOD
   //Add a new element at the specified index in this list
   //PRE: accepts the element to add & index location
   //POST:if index is 0 - addfirst
@@ -92,19 +93,13 @@ public class MyLinkedList<E> implements MyList<E> {
       addLast(e);
     }
     else {
-      Node<E> current = head;
-      for (int i = 1; i < index; i++) {
-        current = current.next;
-      }
-      Node<E> temp = current.next;
-      current.next = new Node<>(e);
-      (current.next).next = temp;
-      size++;
+      //COMPLETE THE ADD STEPS HERE
+      System.out.println("You must add the logic for method: add");
     }
   }
 
 
-  //TASK 1: ADD BEFORE
+  //TASK 2: ADD BEFORE
   //PRE:  Accepts 2 values: the Prior value & the value to add 
   //POST: New node is added prior to the location of insertion
 
@@ -119,6 +114,7 @@ public class MyLinkedList<E> implements MyList<E> {
 
     //else find where to insert & adjust pointers
  
+    
   }
 
   // Remove the head node and return the object
@@ -169,7 +165,7 @@ public class MyLinkedList<E> implements MyList<E> {
     }
   }
 
-  //TASK 2: DELETE BEFORE
+  //TASK 3: DELETE BEFORE
   //PRE:   Function accepts the element value immediately AFTER node to be deleted
   //POST:  The node prior to the value given is deleted 
 
