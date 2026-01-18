@@ -106,6 +106,7 @@ public class MyLinkedList<E> implements MyList<E> {
   public void addBefore(E prior, E data) {
 
     System.out.println("You must add the logic for method: AddBefore");
+    //check if prior exists
 
 
     //if list is empty, add node 
@@ -127,13 +128,16 @@ public class MyLinkedList<E> implements MyList<E> {
     if (size == 0) {
       return null;
     }
+    else if (size == 1) {
+      E temp = head.element;
+      head = tail = null;
+      size = 0;
+      return temp;
+    }
     else {
       E temp = head.element;
       head = head.next;
       size--;
-      if (head == null) {
-        tail = null;
-      }
       return temp;
     }
   }
@@ -171,6 +175,8 @@ public class MyLinkedList<E> implements MyList<E> {
 
   public E deleteBefore(E prior) {
     System.out.println("You must add the logic for method: AddBefore");
+
+    //check if prior exists
 
     //if there is <= 1 element in list
  
