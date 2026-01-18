@@ -108,7 +108,6 @@ public class MyLinkedList<E> implements MyList<E> {
     System.out.println("You must add the logic for method: AddBefore");
     //check if prior exists
 
-
     //if list is empty, add node 
 
     //add node prior to head
@@ -259,7 +258,7 @@ public class MyLinkedList<E> implements MyList<E> {
   //     else returns false
   public boolean contains(Object e) {
     System.out.println("You must add the logic for method: contains");
-     return false;
+    return false;
   }
 
   @Override 
